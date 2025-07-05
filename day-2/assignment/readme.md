@@ -1,1 +1,1 @@
-assigment
+assignemnt
