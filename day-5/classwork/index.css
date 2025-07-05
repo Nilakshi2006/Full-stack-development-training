@@ -1,0 +1,30 @@
+#parent{
+    width:80%;
+    height:600px;
+    border:2px solid green;
+    display: grid;
+     grid-template-columns: repeat(4,1fr);
+}
+#parent>div:nth-child(6){
+    background-color: yellowgreen;
+    grid-area:2/3/5/5;
+}
+#parent>div:nth-child(8){
+    background-color: blue;
+    grid-area: 4/2/6/3;
+}
+#parent>div:nth-child(2){
+    background-color: aqua;
+}
+#parent>div:nth-last-child(1){
+    background-color: blueviolet;
+}
+#parent>div:nth-child(2){
+    grid-area: 1/2/2/4;
+}
+
+.box{
+    /* width:200px;
+    height:150px; */
+    border:1px solid red;
+}

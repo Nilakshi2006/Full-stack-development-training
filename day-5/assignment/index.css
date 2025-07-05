@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.keyboard-container {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between rows */
+}
+
+.keyboard-row {
+    display: flex;
+    gap: 8px; /* Space between keys in a row */
+}
+
+.key {
+    background-color: #555;
+    color: #eee;
+    border-radius: 5px;
+    padding: 10px 12px;
+    min-width: 40px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none; /* Prevent text selection on keys */
+    box-shadow: 0 3px 0 #777; /* Give keys a pressed look */
+    transition: background-color 0.1s ease, box-shadow 0.1s ease, transform 0.1s ease;
+    flex-shrink: 0; /* Prevent keys from shrinking */
+    text-align: center;
+    line-height: 1.2; /* For keys with two lines of text */
+}
+
+.key:active {
+    background-color: #444;
+    box-shadow: 0 1px 0 #666;
+    transform: translateY(2px);
+}
+
+/* Specific key sizes and styles */
+.wide {
+    min-width: 70px;
+}
+
+.extra-wide {
+    min-width: 90px;
+}
+
+.wide-extra {
+    min-width: 110px; /* For Shift keys */
+}
+
+.backspace {
+    background-color: #777;
+}
+
+.tab {
+    background-color: #777;
+}
+
+.backslash {
+    background-color: #777;
+}
+
+.capslock {
+    background-color: #777;
+}
+
+.enter {
+    background-color: #007bff; /* Blue for Enter key */
+    box-shadow: 0 3px 0 #0056b3;
+}
+.enter:active {
+    background-color: #0056b3;
+    box-shadow: 0 1px 0 #003d82;
+}
+
+.shift {
+    background-color: #777;
+}
+
+.spacebar {
+    min-width: 300px; /* Adjust as needed */
+    flex-grow: 1; /* Allow spacebar to take available space */
+    background-color: #666;
+    box-shadow: 0 3px 0 #888;
+}
+.spacebar:active {
+    background-color: #555;
+    box-shadow: 0 1px 0 #777;
+}
+
+.ctrl, .alt, .win, .fn {
+    background-color: #777;
+    font-size: 12px;
+}
+
+.arrow-up, .arrow-down, .arrow-left, .arrow-right {
+    font-size: 16px;
+    background-color: #777;
+}
+
+.num-symbol {
+    font-size: 12px; /* Smaller font for two-line keys */
+    line-height: 1; /* Adjust line height for two lines */
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* Function keys and utility keys at the top */
+.function-row .key {
+    background-color: #444;
+    font-size: 12px;
+    min-width: 35px;
+    height: 35px;
+    padding: 5px;
+}
+
+.function-row {
+    gap: 6px;
+    margin-bottom: 15px; /* Space between function row and number row */
+}
+
+.function-row .f-key:nth-child(5),
+.function-row .f-key:nth-child(9) {
+    margin-right: 15px; /* Add gaps for F-key groups */
+}
+
+.esc {
+    background-color: #777;
+}
+
+.utility-key {
+    background-color: #777;
+}
+
+/* Layout adjustments for the bottom row and arrows */
+.bottom-row {
+    justify-content: flex-start; /* Align items to the start of the row */
+    gap: 8px;
+}
+
+.bottom-row .key:nth-child(4) { /* Spacebar */
+    margin: 0 15px; /* Add some space around the spacebar */
+}
+
+.arrow-up, .arrow-down, .arrow-left, .arrow-right {
+    min-width: 40px;
+    margin-left: 5px; /* Space before arrow keys */
+}
+
+.arrow-up {
+    margin-left: 20px; /* Separate arrow cluster */
+}
+
+/* For multi-line key content like `~` and `` ` `` */
+.num-symbol br {
+    display: block;
+    content: "";
+    margin-bottom: 2px; /* Adjust spacing between characters */
+}

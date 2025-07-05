@@ -1,0 +1,68 @@
+/* :root{
+    --primary-color:rbg(45,116,193);
+    --secondary-color:yellow;
+    --button-color:
+    --font-color:
+*/
+ #parent{
+    width:80%;
+    height: 500px;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap: 10px;
+
+}
+#parent>div:nth-child(1){
+    background-color: rgb(61, 110, 163);
+    
+}
+#parent>div:nth-child(2){
+    background-color: yellow;
+    grid-area: 1/2/2/4;
+}
+#parent>div:nth-child(3){
+    background-color: pink;
+}
+#parent>div:nth-child(4){
+    background-color: green;
+}
+#parent>div:nth-child(5){
+    background-color: skyblue;
+}
+#parent>div:nth-child(6){
+    background-color: rgb(11, 184, 11);
+    grid-area: 2/3/4/5;
+}
+#parent>div:nth-child(7){
+    background-color:rgb(11, 32, 11);
+    grid-area: 3/1/6/2;
+}
+#parent>div:nth-child(8){
+    background-color:rgb(93, 87, 87);
+}
+#parent>div:nth-child(9){
+    background-color: rgb(49, 0, 128);
+    grid-area: 4/2/7/3;
+}
+#parent>div:nth-child(10){
+    background-color: black;
+}
+#parent>div:nth-child(11){
+    background-color: rgb(196, 196, 15);
+    grid-area: 4/4/7/5;
+}
+
+#parent>div:nth-child(12){
+   background-color: rgb(71, 38, 38) ;
+}
+#parent>div:nth-child(13){
+    background-color: rgb(134, 30, 48);
+}
+#parent>div:nth-child(14){
+    background-color: rgb(149, 145, 145);
+}
+.box{
+    border: 1px solid red;
+    border-radius: 10px;;
+}
