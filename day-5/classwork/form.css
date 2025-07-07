@@ -1,0 +1,29 @@
+#parent{
+    width: 30%;
+    weight:400px;
+    border:1px solid green;
+    border-radius: 5px;
+    margin: auto;
+    text-align: center;
+}
+input{
+    padding: 10px;
+    width: 90%;
+    margin-top: 30%;
+}
+#btn{
+    margin-top: 40px;
+    width: 50%;
+padding: 10px;
+cursor: pointer;
+background-color: black;
+font-size: 2px;
+}
+#input:focus{
+    background-color: azure;
+
+}
+#btn:hover{
+    font-size: 16px;
+    font-weight: 600;
+}

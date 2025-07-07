@@ -1,55 +1,33 @@
- /* .keyboard {
-      display: inline-block;
+.keyboard {
+ display: inline-block;
       padding: 10px;
+      margin: 1px;
       background: black;
       border-radius: 20px;
-      justify-content: space-evenly;
-    }
+}
+.row {
+  display: flex;
+      margin: 3px ;
 
-    .row {
-      display: flex;
-      justify-content: space-evenly;
-      margin: 4px ;
-    }
+}
 
-   
-    .button {
-      background-color:grey;
-      border-radius: 3px;
+.key {
+  background-color:rgb(31, 30, 30);
+      border-radius: 6px;
       padding: 15px 20px;
-      margin: 2px;
-      font-size: 14px;
+      margin: 1px;
+      font-size: 16px;
       font-weight: bold;
-      color:white;
-    }
-    .space {
-    padding: 15px 100px;
-    }  */
-      .keyboard{
-        display: inline-block;
-        padding: 10px;
-        background-color: black;
-        justify-content: space-evenly;
-      }
-      .row{
-        display: flex;
-        margin: 4px;
-        justify-content: space-evenly;
-      }
-      .key{
-        background-color:grey;
-      border-radius: 3px;
-      padding: 15px 20px;
-      margin: 2px;
-      font-size: 14px;
-      font-weight: bold;
-      color:white;
-      }
-      parent>div:nth-child(31){
-        background-color: black;
-        color: black;
-    grid-area:3/1/2/4;
-      }
-      
+      color: white;
+      justify-content: space-evenly;
+      text-align: center;
+      flex-grow: 1;
+}
+.key:hover {
+  background-color: #ddd;
+}
 
+.space{
+ min-width:240px;
 
+}
